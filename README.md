@@ -15,45 +15,45 @@ Here's what you can expect when you download TalentBridge:
 
 - Job recommendations: Based on your profile and previous job searches, TalentBridge provides personalized job recommendations that fit your career goals.
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Installation](#installation)
-  * [Contributing](#contrubuting)
-  * [License](#license)
-  * [Questions](#questions)
+* [Installation](#installation)
+* [Contributing](#contrubuting)
+* [License](#license)
+* [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  - Clone the repository and run an integrated terminal.
-  - Enter 'npm i' to download and install the required dependencies.
-  - Create .env file and add: 
-  - `DB_NAME='employees_db'`
-  - `DB_PASSWORD='INSERT YOUR SQL PASSWORD'`
-  - `DB_USER='root'`
-  - Open an integrated terminal and enter `mysql -u root -p`, enter password to start MySQL.
-  - Enter `source db/schema.sql` to create the database.
-  - Enter `node seeds/index.js` to create the example data.
-  - In the terminal enter `node server.js` and the application will run.
+- Clone the repository and run an integrated terminal.
+- Enter 'npm i' to download and install the required dependencies.
+- Create .env file and add: 
+- `DB_NAME='employees_db'`
+- `DB_PASSWORD='INSERT YOUR SQL PASSWORD'`
+- `DB_USER='root'`
+- Open an integrated terminal and enter `mysql -u root -p`, enter password to start MySQL.
+- Enter `source db/schema.sql` to create the database.
+- Enter `node seeds/index.js` to create the example data.
+- In the terminal enter `node server.js` and the application will run.
 
-  ## Contributing
+## Contributing
 
-  Contribution to this project will not be accepted, unfortunately. Thank you for your interest!
+Contribution to this project will not be accepted, unfortunately. Thank you for your interest!
 
-  
-  ## License
-  - MIT
-  - https://choosealicense.com/licenses/MIT/
-  - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
-  
 
-  ## Questions
+## License
+- MIT
+- https://choosealicense.com/licenses/MIT/
+- A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
-  If you have any questions or require further information, please contact me at:
 
-  - GitHub: https://github.com/GuyJiawei
-  - Email: guy.jiawei.anderson@gmail.com
+## Questions
 
-  ## Demo
-  Full video at: https://drive.google.com/drive/u/0/folders/1UyUEFB5XT-NMHoaMfX0TNRdzYaItLAao
+If you have any questions or require further information, please contact me at:
 
-  ![GIF](./assets/e-commerce_demo-gif.gif)
+- GitHub: https://github.com/GuyJiawei
+- Email: guy.jiawei.anderson@gmail.com
+
+## Demo
+Full video at: https://drive.google.com/drive/u/0/folders/1UyUEFB5XT-NMHoaMfX0TNRdzYaItLAao
+
+![GIF](./assets/e-commerce_demo-gif.gif)
