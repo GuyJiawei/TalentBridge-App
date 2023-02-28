@@ -18,9 +18,13 @@ Jobs.init(
             allowNull: false,
         },
         salary: {
-            type: DataTypes.DECIMAl,
+            type: DataTypes.DECIMAL,
             allowNull: false,
         },
+        // location: {
+        //     type: DataTypes.STRING,
+        //     allowNull: false,
+        // },
         category_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -34,8 +38,8 @@ Jobs.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'category',
+        modelName: 'jobs',
     }
 );
 
-module.exports = Category;
+module.exports = Jobs;
