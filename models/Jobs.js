@@ -21,10 +21,10 @@ Jobs.init(
             type: DataTypes.DECIMAL,
             allowNull: false,
         },
-        // location: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false,
-        // },
+        location: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         category_id: {
             type: DataTypes.INTEGER,
             references: {
