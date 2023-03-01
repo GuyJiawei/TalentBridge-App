@@ -8,15 +8,21 @@ Category.hasMany(Jobs, {
     foreignKey: 'category_id',
 });
 
+Jobs.belongsTo(Category,{
+    foreignKey:'Category_id'
+});
+
+
 Jobs.belongsToMany(User,{
     through: UserJobs,
     foreignKey: 'jobs_id',
 });
 
-UserJobs.belongsToMany(Jobs,{
+User.belongsToMany(Jobs,{
     through: UserJobs,
     foreignKey: 'user_id'
 });
 
 module.exports = { User, Category, UserJobs, Jobs };
+
 
