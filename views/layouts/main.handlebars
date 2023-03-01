@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial=1.0"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="/public/css/styles.css">
+        <title>TalentBridge: Jobs Finder</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+
+        <main>
+            {{{body}}}
+        </main>
+
+        <footer class="card border-0">
+            <div class="card-body footer-card">
+                <h6 class="footer-title">TalentBridge built by </p>
+                <p><a href="https://github.com/ValFin96" class="text-secondary">Val</a></p>
+                <p><a href="https://github.com/Majid-pkz" class="text-secondary">Majid</a></p>
+                <p><a href="https://github.com/Sudarshans30" class="text-secondary">Sudarshan</a></p>
+                <p><a href="https://github.com/katita81" class="text-secondary">Katherine</a></p>
+                <p><a href="https://github.com/GuyJiawei" class="text-secondary">Guy</a></p>
+                &copy; 2023
+            </div>
+        </footer>
+
+            {{#if logged_in}}
+                <script src="/public/js/logout.js"
+            {{/if}}
+    </body>
+</html>
+
