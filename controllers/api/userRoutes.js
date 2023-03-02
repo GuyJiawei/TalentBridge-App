@@ -86,7 +86,7 @@ router.put('/:id', async (req, res) => {
             lastName: req.body.lastName,
             email: req.body.email,
             password: req.body.password,
-            category_id: req.body.category_id
+            skill: req.body.skill,
         },
             {
                 where: {
