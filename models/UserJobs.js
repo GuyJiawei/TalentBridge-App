@@ -18,6 +18,7 @@ UserJobs.init(
             references: {
                 model: 'jobs',
                 key: 'id',
+                // unique: false
             },
         },
         user_id: {
@@ -25,6 +26,7 @@ UserJobs.init(
             references: {
                 model: 'user',
                 key: 'id',
+                // unique: false
             },
         },
     },

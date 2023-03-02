@@ -38,15 +38,9 @@ User.init(
             validate: {
                 len: [8],
             },
-        },
-        // category_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: 'category',
-        //         key: 'id',
-        //     },
-        // },
+        },       
     },
+    
     {
         hooks: {
             beforeCreate: async (newUserData) => {
