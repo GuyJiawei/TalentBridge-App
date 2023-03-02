@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category, Jobs, User } = require('../../models');
+const { Category, Jobs, User,UserJobs } = require('../../models');
 
 // The `/api/users` endpoint
 router.get('/', async (req, res) => {
@@ -15,10 +15,13 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-    // find one user by its `id` value
+    // find one user by its `id` value including all jobs applied by that user
    
     try {
-        const userData = await User.findByPk(req.params.id);
+        const userData = await User.findByPk(req.params.id,{
+            include:[{model:Jobs, through: UserJobs}]
+        });
+
 
         if (!userData) {
             res.status(404).json({ message: 'No User found with this id!' });
