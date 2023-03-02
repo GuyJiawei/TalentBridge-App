@@ -9,7 +9,7 @@ Category.hasMany(Jobs, {
 });
 
 Jobs.belongsTo(Category,{
-    foreignKey:'Category_id'
+    foreignKey:'category_id'
 });
 
 

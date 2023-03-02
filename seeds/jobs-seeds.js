@@ -18,6 +18,12 @@ const jobData = [
     salary: 245000,
      location: 'NSW',
     category_id:5
+  },
+  {
+    job_name: 'Senior Developer',
+    salary: 120000,
+    location: 'VIC',
+    category_id:5
   }
   
 ];

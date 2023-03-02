@@ -32,8 +32,6 @@ router.get('/:id', async (req, res) => {
             {
                 include: [{ model: Category }],
             }
-
-
         );
 
         res.status(200).json(jobData);
@@ -95,5 +93,10 @@ router.delete('/:id', async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+// get all jobs in a specific categories --- to be asked
+
+
+
 
 module.exports = router;

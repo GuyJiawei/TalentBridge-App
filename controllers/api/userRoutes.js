@@ -4,15 +4,9 @@ const { Category, Jobs, User } = require('../../models');
 // The `/api/users` endpoint
 router.get('/', async (req, res) => {
     // find all users
-    // include its associated category
+    
     try {
-        const userData = await User.findAll(
-            {
-                include: [{ model: Category }]
-            }
-
-
-        );
+        const userData = await User.findAll( );
 
         res.status(200).json(userData);
     } catch (err) {
@@ -22,12 +16,9 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
     // find one user by its `id` value
-    //  include its associated category
+   
     try {
-        const userData = await User.findByPk(req.params.id, {
-            // JOIN with 
-            include: [{ model: Category }],
-        });
+        const userData = await User.findByPk(req.params.id);
 
         if (!userData) {
             res.status(404).json({ message: 'No User found with this id!' });
@@ -48,8 +39,7 @@ router.post('/', async (req, res) => {
             lastName: req.body.lastName,
             email: req.body.email,
             password: req.body.password,
-            category_id: req.body.category_id
-
+            
         });
         res.status(200).json(userData);
     } catch (err) {
@@ -61,7 +51,7 @@ router.post('/login', async (req, res) => {
     try {
       const userData = await User.findOne({ where: { email: req.body.email } });
   
-      if (!userData) {
+      if (userData==0) {
         res
           .status(400)
           .json({ message: 'Incorrect email or password, please try again' });
