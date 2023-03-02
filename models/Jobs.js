@@ -17,6 +17,10 @@ Jobs.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        description: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         salary: {
             type: DataTypes.DECIMAL,
             allowNull: false,

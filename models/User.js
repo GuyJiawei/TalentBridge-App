@@ -38,7 +38,11 @@ User.init(
             validate: {
                 len: [8],
             },
-        },       
+        }, 
+        skill: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },      
     },
     
     {
