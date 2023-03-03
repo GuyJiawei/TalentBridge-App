@@ -3,6 +3,7 @@ const loginFormHandler = async (event) => {
   
     const email = document.querySelector('#inputEmail').value.trim();
     const password = document.querySelector('#inputPassword').value.trim();
+    console.log (`${email}, ${password}`)
   
     if (email && password) {
       const response = await fetch('/api/users/login', {
@@ -22,26 +23,26 @@ const loginFormHandler = async (event) => {
   };
   
 
-const signupFormHandler = async (event) => {
-    event.preventDefault();
+// const signupFormHandler = async (event) => {
+//     event.preventDefault();
   
-    if (event) {
-      const response = await fetch('/signup', {
-        method: 'GET',
-      });
+//     if (event) {
+//       const response = await fetch('/profile', {
+//         method: 'GET',
+//       });
   
-      if (response.ok) {
-        document.location.replace('/signup');
-      } else {
-        console.error(err);
-        alert(response.statusText);
-      }
-    }
-};
+//       if (response.ok) {
+//         document.location.replace('/profile');
+//       } else {
+//         console.error(err);
+//         alert(response.statusText);
+//       }
+//     }
+// };
 
 document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
+  .querySelector('#submitBtn')
+  .addEventListener('click', loginFormHandler);
 
 // document
 //   .querySelector('#sign-up-btn')
