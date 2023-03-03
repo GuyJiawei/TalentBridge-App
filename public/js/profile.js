@@ -8,6 +8,7 @@ const profileFormHandler = async (event) => {
 
    if (firstName && lastName && email && dropdown) {
      const response = await fetch('api/users/profile', {
+      // method should be PUT since we defined it as PUT method in userRoutes
        method: 'POST',
        body: JSON.stringify({ firstName, lastName, email, dropdown }),
        headers: { 'Content-Type': 'application/json' }
