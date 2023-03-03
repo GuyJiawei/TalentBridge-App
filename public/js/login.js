@@ -10,9 +10,11 @@ const loginFormHandler = async (event) => {
         body: JSON.stringify({ email, password }),
         headers: { 'Content-Type': 'application/json' },
       });
-  
+      
+      console.log(response);
       if (response.ok) {
-        document.location.replace('/');
+        console.log('logged in');
+        document.location.replace('/profile');
       } else {
         alert('Invalid Login Details');
       }
@@ -25,7 +27,7 @@ const signupFormHandler = async (event) => {
   
     if (event) {
       const response = await fetch('/signup', {
-        method: 'GET'
+        method: 'GET',
       });
   
       if (response.ok) {
@@ -41,6 +43,6 @@ document
   .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);
 
-document
-  .querySelector('#sign-up-btn')
-  .addEventListener('click', signupBtnHandler);
+// document
+//   .querySelector('#sign-up-btn')
+//   .addEventListener('click', signupBtnHandler);
