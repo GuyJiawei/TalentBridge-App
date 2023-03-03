@@ -3,7 +3,7 @@
 </div>
 
 <form>
-  <div class="form-group">
+  <div class="form login-form">
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -13,9 +13,39 @@
     <input type="password" class="form-control" id="inputPassword" placeholder="Password">
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-  <div class="col-12" id="signup-redirect">    
-      <button class="btn btn-sm" type="submit" id="sign-up-btn">Sign up!</button>
-  </div>
 </form>
+
+<div class="card-body col-12 container-sm border-0">
+  <h2>Please Enter Your Details</h2>
+
+  <form class="form signup-form">
+    <div class="form-group form-row">
+      <div class="col-3">
+        <input type="email" class="form-control" id="email-signup" placeholder="Email: email@email.com" aria-describedby="emailInput">
+      </div>
+
+      <div class="col-3">
+        <input type="text" class="form-control" id="firstName-signup" placeholder="John" aria-describedby="usernameInput">
+      </div>
+      
+      <div class="col-3">
+        <input type="text" class="form-control" id="lastName-signup" placeholder="Smith" aria-describedby="usernameInput">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-6">
+        <input type="password" id="password-signup" class="form-control" placeholder="Password: Talent1234#" aria-describedby="passwordHelpInline">
+        <small id="passwordHelpInline" class="text-muted">
+          Must be 10-20 characters long, and contain numbers and a special character
+        </small>
+        <p id="password-strength-result">
+        </p>
+      </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+ 
+  </form>
+</div>
 
 <script src="/public/js/login.js"></script>

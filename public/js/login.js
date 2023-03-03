@@ -23,24 +23,30 @@ const loginFormHandler = async (event) => {
 const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    if (event) {
-      const response = await fetch('/signup', {
-        method: 'GET'
+    const firstName = document.querySelector('#firstName-signup').value.trim();
+    const LastName = document.querySelector('#lastName-signup').value.trim();
+    const email = document.querySelector('#email-signup').value.trim();
+    const password = document.querySelector('#password-signup').value.trim();
+  
+    if (firstName && LastName && email && password) {
+      const response = await fetch('/api/user', {
+        method: 'POST',
+        body: JSON.stringify({ firstName, LastName, email, password }),
+        headers: { 'Content-Type': 'application/json' }
       });
   
       if (response.ok) {
-        document.location.replace('/signup');
+        document.location.replace('/user'); //this needs to be checked. i think it should go to Sudarshan's Profile
       } else {
-        console.error(err);
         alert(response.statusText);
       }
     }
 };
 
 document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
+  .querySelector('.signup-form')
+  .addEventListener('submit', signupFormHandler);
 
 document
-  .querySelector('#sign-up-btn')
-  .addEventListener('click', signupBtnHandler);
+  .querySelector('.login-form')
+  .addEventListener('submit', loginFormHandler);
