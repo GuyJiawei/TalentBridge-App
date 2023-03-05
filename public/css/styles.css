@@ -5,7 +5,9 @@
     padding: 0px;
 
     box-sizing: border-box; 
-    
+    max-width: 90%
+    max-content;
+  
 
 }
 
@@ -38,12 +40,12 @@ nav {
 
     font-family: "Montserrat", sans-serif;
 
+    margin-bottom: 30px;
 
 
 
-    border-width: 3px;
-        border-style: solid;
-        border-color:lightseagreen;
+
+
 
 }
 
@@ -126,6 +128,7 @@ h4{
 
 body{
 background-color: #c1c1c7;
+
 }
 
 
@@ -139,17 +142,33 @@ background-color: #c1c1c7;
     
 }
 
+main{
 
-#login, #mainImg{
-margin-top: 120px;
-margin-left: 15px;
-margin-bottom: 145px;
-float: left;
-display: inline;
-width: 49%
+    
+            width: auto;
+            display:inline-block;
+          
+}
 
+#mainImg{
+    width: 56.3%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float:left;
+}
+#login{
+margin-top: 110px;
+margin-left: 115px;
+margin-bottom: 125px;
+margin-right: 115px;
+border: 20px;
 
-
+display: inline-block;
+width: 19.5%;
+padding: 50px;
+border-width: 3px;
+    border-style: solid;
+    border-color: lightseagreen;
 }
 
 
@@ -183,15 +202,18 @@ a{
     background-color: #89898b;
 }
 
-/*.bg-div {
-   /* background: #333; background-color: teal;
-    overflow: hidden;
-
-
-
-    margin: 10px 15px 15px 10px;
-} */
 
 .btn {
     background-color: #389944;
+    margin-left: 65px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+}
+.btn:hover{
+    border-width: 2px;
+    border-color: teal;
+    border-style: solid;
+    background-color: teal;
+    color: white;
 }
