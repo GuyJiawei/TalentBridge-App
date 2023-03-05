@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    max-width: 80%
+    max-content;
+}
+
+body {
+    background-color: #c1c1c7;
+}
+
+.body-text {
+    font-family: "Montserrat", sans-serif;
+    align-items: right;
+    justify-content: right;
+    margin-top: 250px;
+}
+
+nav {
+    display: flex;
+    align-items: right;
+    min-height: 8vh;
+    background-color: teal;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.heading {
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+}
+
+h4{
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 200px;
+    font-style: italic;  
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.nav-links a:hover:not(.active) {
+    background-color:#39aa49;
+}
+
+.nav-links li a.active {
+    background-color: #389944;
+    border-width: 3px;
+    border-style: solid;
+    border-color: lightseagreen;
+}
+
+.logo-img {
+    float: left;
+}
+
+main{
+
+    width: auto;
+    display:inline-block;
+}
+
+#mainImg{
+    width: 56.3%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    float:left;
+}
+#login{
+margin-top: 110px;
+margin-left: 115px;
+margin-bottom: 125px;
+margin-right: 115px;
+border: 20px;
+
+display: inline-block;
+width: 19.5%;
+padding: 50px;
+border-width: 3px;
+border-style: solid;
+border-color: lightseagreen;
+}
+
+
+
+
+
+
+footer {
+
+  
+    /* padding: 30px; */
+  
+    
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: azure;
+}
+
+
+
+footer h2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+a{
+    color: azure;
+}
+#footBackground{
+    background-color: #89898b;
+}
+
+
+.btn {
+    background-color: #389944;
+    margin-left: 65px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+}
+.btn:hover{
+    border-width: 2px;
+    border-color: teal;
+    border-style: solid;
+    background-color: teal;
+    color: white;
+}

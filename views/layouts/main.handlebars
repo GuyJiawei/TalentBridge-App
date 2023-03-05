@@ -1,83 +1,61 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width-device-width, initial=1.0"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="/public/css/styles.css">
-        <title>TalentBridge: Jobs Finder</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-dark bg-primary">
-                <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" id="profilePage" href="#">Profile</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="JobsPage" href="#">Jobs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="logout" href="#">Logout</a>
-            </li>
-            </ul>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial=1.0"/>
 
-        {{!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">TalentBridge</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Talent Bridge</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Profile</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Jobs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Logout</a>
-        </li>
-      </ul>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>TalentBridge: Jobs Finder</title>
+  </head>
+<body>
+  <nav>
+    <img class="logo-img" src="images/TalentBridge-02.png" width="300" height="130" ALT="left">
+    <div class="heading" style="text-align: left">
+      <h4>"Building a path to your dream job...!"</h4>
     </div>
-  </div>
-</nav> --}}
+    <ul class="nav-links">
+      <li><a class="active" href="../index.html">Home</a></li>
+      <li><a href="about.html">Sign up</a></li>
+      <li><a href="services.html">Profile</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <img id="mainImg" src="images/workforce1.jpg"   ALT="work interview">
+    <div id="login">
+      {{{body}}}
+    </div>    
+  </main>
+  <footer>
+    <div id="footBackground">
+      <h2>TalentBridge built by:
+        <a href="https://github.com/ValFin96" >Val</a>,
+        <a href="https://github.com/Majid-pkz" >Majid</a>,
+        <a href="https://github.com/Sudarshans30" >Sudarshan</a>,
+        <a href="https://github.com/katita81" >Katherine</a> and
+        <a href="https://github.com/GuyJiawei">Guy</a>
+      </h2>
+      <p>
+          &copy; 2023
+      </p>
+    </div>
+  </footer>
 
-        </div>
-        </nav>
+  {{#if logged_in}}
+    <script src="/public/js/logout.js" ></script>
+  {{/if}} 
 
-        <main>
-            {{{body}}}
-        </main>
+  </body>
 
-        <footer class="card border-0">
-            <div class="card-body footer-card">
-                <h6 class="footer-title">TalentBridge built by </p>
-                <p><a href="https://github.com/ValFin96" class="text-secondary">Val</a></p>
-                <p><a href="https://github.com/Majid-pkz" class="text-secondary">Majid</a></p>
-                <p><a href="https://github.com/Sudarshans30" class="text-secondary">Sudarshan</a></p>
-                <p><a href="https://github.com/katita81" class="text-secondary">Katherine</a></p>
-                <p><a href="https://github.com/GuyJiawei" class="text-secondary">Guy</a></p>
-                &copy; 2023
-            </div>
-        </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 
-            {{#if logged_in}}
-                <script src="/public/js/logout.js"
-            {{/if}}
-    </body>
+  </html>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</html>
 
