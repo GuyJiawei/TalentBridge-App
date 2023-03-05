@@ -1,13 +1,15 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box; 
-    max-width: 80%
+    max-width: 100%
     max-content;
 }
 
 body {
     background-color: #c1c1c7;
+    max-width: 100%;
+    margin-right: 0px;
 }
 
 .body-text {
@@ -35,11 +37,12 @@ nav {
 h4{
     margin-top: 50px;
     margin-left: 40px;
-    margin-right: 200px;
+    margin-right: 95px;
     font-style: italic;  
 }
 
-.nav-links {
+
+#nav-links {
     display: flex;
     justify-content: space-around;
     width: 40%;
@@ -47,11 +50,11 @@ h4{
     margin-top: 50px;
 }
 
-.nav-links li {
+#nav-links li {
     list-style: none;
 }
 
-.nav-links a {
+#nav-links a {
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
@@ -60,11 +63,12 @@ h4{
     padding: 14px 16px;
 }
 
-.nav-links a:hover:not(.active) {
+#nav-links a:hover:not(.active) {
     background-color:#39aa49;
 }
 
-.nav-links li a.active {
+/* #nav-links li */ 
+.active { 
     background-color: #389944;
     border-width: 3px;
     border-style: solid;
@@ -82,20 +86,20 @@ main{
 }
 
 #mainImg{
-    width: 56.3%;
+    width: 60.3%;
     margin-left: 30px;
     margin-bottom: 30px;
     float:left;
 }
 #login{
-margin-top: 110px;
-margin-left: 115px;
-margin-bottom: 125px;
-margin-right: 115px;
+margin-top: 40px;
+margin-left: 45px;
+margin-bottom: 20px;
+margin-right: 45px;
 border: 20px;
 
 display: inline-block;
-width: 19.5%;
+width: 30%;
 padding: 50px;
 border-width: 3px;
 border-style: solid;
@@ -109,26 +113,30 @@ border-color: lightseagreen;
 
 footer {
 
-  
-    /* padding: 30px; */
-  
-    
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     color: azure;
+    
 }
 
 
 
 footer h2 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0px;
     font-size: 15px;
+    padding:15px;
 }
+
+footer p{
+    padding-bottom: 15px;
+}
+
 a{
     color: azure;
 }
+
 #footBackground{
     background-color: #89898b;
 }
@@ -147,4 +155,11 @@ a{
     border-style: solid;
     background-color: teal;
     color: white;
+}
+
+
+.form-control{
+    width:max-content;
+    margin-top: 20px;
+    align-content: center;
 }
