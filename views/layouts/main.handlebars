@@ -1,88 +1,55 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width-device-width, initial=1.0"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>TalentBridge: Jobs Finder</title>
-    </head>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial=1.0"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>TalentBridge: Jobs Finder</title>
+  </head>
 <body>
-
-
-
-  <!--<img class="logo-img" src="../../../public/images/TalentBridge-04.png" width="130" height="130" ALT="align box" ALIGN=CENTER>-->
-
-
-
-
   <nav>
-
     <img class="logo-img" src="images/TalentBridge-02.png" width="300" height="130" ALT="left">
-
-
     <div class="heading" style="text-align: left">
-
       <h4>"Building a path to your dream job...!"</h4>
-
-
-
-
     </div>
-
     <ul class="nav-links">
-
       <li><a class="active" href="../index.html">Home</a></li>
-
       <li><a href="about.html">Sign up</a></li>
-
       <li><a href="services.html">Profile</a></li>
-
     </ul>
-
   </nav>
 
-
-
-
-
-
-
-    </nav>
-
-    <main>
-      <img id="mainImg" src="images/workforce1.jpg"   ALT="work interview">
-      <div id="login">
-        {{{body}}}
-      </div>
-      
-      
-    </main>
-
-
-
-    <footer class="card border-0"><!--created a footer-->
-      <div id="footBackground">
-        <h2>TalentBridge built by:
-          <a href="https://github.com/ValFin96" >Val</a>,
-          <a href="https://github.com/Majid-pkz" >Majid</a>,
-          <a href="https://github.com/Sudarshans30" >Sudarshan</a>,
-          <a href="https://github.com/katita81" >Katherine</a> and
-          <a href="https://github.com/GuyJiawei">Guy</a>
-        </h2>
-        <p>
+  <main>
+    <img id="mainImg" src="images/workforce1.jpg"   ALT="work interview">
+    <div id="login">
+      {{{body}}}
+    </div>    
+  </main>
+  <footer>
+    <div id="footBackground">
+      <h2>TalentBridge built by:
+        <a href="https://github.com/ValFin96" >Val</a>,
+        <a href="https://github.com/Majid-pkz" >Majid</a>,
+        <a href="https://github.com/Sudarshans30" >Sudarshan</a>,
+        <a href="https://github.com/katita81" >Katherine</a> and
+        <a href="https://github.com/GuyJiawei">Guy</a>
+      </h2>
+      <p>
           &copy; 2023
-        </p>
-      </div>
-    </footer>
+      </p>
+    </div>
+  </footer>
 
+  {{#if logged_in}}
+    <script src="/public/js/logout.js" ></script>
+  {{/if}} 
 
-    
-            {{#if logged_in}}
-                <script src="/public/js/logout.js" ></script>
-            {{/if}} 
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

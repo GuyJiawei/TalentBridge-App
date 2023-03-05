@@ -1,153 +1,84 @@
 * {
-    
     margin: 0px;
-
     padding: 0px;
-
     box-sizing: border-box; 
-    max-width: 90%
+    max-width: 80%
     max-content;
-  
+}
 
+body {
+    background-color: #c1c1c7;
 }
 
 .body-text {
-
-    /*display: flex; */
-
     font-family: "Montserrat", sans-serif;
-
     align-items: right;
-
     justify-content: right;
-
     margin-top: 250px;
-   
-
 }
 
 nav {
-
     display: flex;
-
-   /* justify-content: space-around;*/
-
     align-items: right;
-
     min-height: 8vh;
-
     background-color: teal;
-
     font-family: "Montserrat", sans-serif;
-
     margin-bottom: 30px;
-
-
-
-
-
-
 }
 
 .heading {
-
-
-/*background-color: #357336;*/
     color: white;
-
-    /* text-transform: uppercase; */
-
     letter-spacing: 1.5px;
-
     font-size: 18px;
-
 }
 
 h4{
     margin-top: 50px;
     margin-left: 40px;
     margin-right: 200px;
-    font-style: italic;
-    
+    font-style: italic;  
 }
 
 .nav-links {
-
     display: flex;
-
     justify-content: space-around;
-
     width: 40%;
-   margin-left: 40px;
-   margin-top: 50px;
-
+    margin-left: 40px;
+    margin-top: 50px;
 }
 
 .nav-links li {
-
     list-style: none;
-
 }
 
 .nav-links a {
-
     color: white;
-
     text-decoration: none;
-
     letter-spacing: 3px;
-
     font-weight: bold;
-
     font-size: 14px;
-
     padding: 14px 16px;
-
 }
 
 .nav-links a:hover:not(.active) {
-
     background-color:#39aa49;
-
 }
 
 .nav-links li a.active {
-
     background-color: #389944;
-
     border-width: 3px;
     border-style: solid;
     border-color: lightseagreen;
-  
-
-    /*lightseagreen;
-    #39aa49;
-    */
-
 }
-
-body{
-background-color: #c1c1c7;
-
-}
-
-
 
 .logo-img {
     float: left;
-  
-
-      
-    
-    
 }
 
 main{
 
-    
-            width: auto;
-            display:inline-block;
-          
+    width: auto;
+    display:inline-block;
 }
 
 #mainImg{
@@ -167,8 +98,8 @@ display: inline-block;
 width: 19.5%;
 padding: 50px;
 border-width: 3px;
-    border-style: solid;
-    border-color: lightseagreen;
+border-style: solid;
+border-color: lightseagreen;
 }
 
 
