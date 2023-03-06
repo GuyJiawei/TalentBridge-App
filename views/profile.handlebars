@@ -10,12 +10,8 @@
       <label for="email">Email:</label>
       <input value="{{email}}" name="email" id="email" aria-placeholder="input your valid email">
       <br> 
-
-       {{!-- <label for="skill">skill:</label>
-      <input value="{{skill}}" name="email" id="email" aria-placeholder="input your valid email">
-       <br> --}}
        <label for="dropdown">skill category:</label>
-      <select id="dropdown" name="dropdown">
+      <select id="dropdown" name="dropdown" value="{{skill}}">
         <option value="" selected disabled>{{skill}}</option>
         <option value="Accounting"> Accounting</option>
         <option value="Administration">Administration</option>
@@ -36,7 +32,6 @@
     <script id="profile-template" type="text/x-handlebars-template">
       <h2>{{firstName}} {{lastName}}</h2>
       <p>Email: {{email}}</p>
-      {{!-- <p>Selected Option: {{selectedOption}}</p> --}}
     </script>
     <script src="./js/profile.js"></script> 
   </body>
