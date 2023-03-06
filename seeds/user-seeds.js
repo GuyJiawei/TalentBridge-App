@@ -1,32 +1,34 @@
 const { User } = require('../models');
+const bcrypt = require('bcrypt');
+
 
 const userData = [
   {
     firstName: 'Alex',
     lastName:'Fergosen',
     email:'alex@gmail.com',
-    password:'Alex12345',
-    skill:'React'
+    password:`${bcrypt.hashSync("Alex12345", 10)}`,             
+    skill:'Accounting'
   },
   {
-    firstName: 'Gladys',
-    lastName:'Berejiklian',
+    firstName: 'Peter',
+    lastName:'Jackson',
     email:'gb@gov.com',
-    password:'Covid19news',
-    skill:'Java'
+    password:`${bcrypt.hashSync("Covid19news", 10)}`,
+    skill:''
   },
   {
     firstName: 'Rahat',
     lastName:'saini',
     email:'rs@abc.com',
-    password:'pass12345',
-    skill:''
+    password:`${bcrypt.hashSync('pass12345', 10)}`,
+    skill:'IT'
   },
   {
     firstName: 'AAA',
     lastName:'BBB',
     email:'AB@abc.com',
-    password:'pass192345',
+    password:`${bcrypt.hashSync('pass12345', 10)}`,      
     skill:''
   },
  
