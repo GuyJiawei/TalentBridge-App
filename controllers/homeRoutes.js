@@ -20,32 +20,12 @@ router.get('/signup', async (req, res) => {
   }
 });
 
-// router.get('/profile',   async (req, res) => {
-//   try {
-//     // Find the logged in user based on the session ID
-//     const userData = await User.findByPk(req.session.user_id, {
-//       attributes: { exclude: ['password'] },
-//       // include: [{ model: Project }],
-//     });
-
-//     const user = userData.get({ plain: true });
-
-//     res.render('profile', {
-//       ...user,
-//       logged_in: true
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
-
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      //include: [{ model: Project }],
     });
 
     const user = userData.get({ plain: true });
@@ -59,16 +39,36 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
-
-
-
-router.get('/profile/:id', async (req, res) => {
-
+router.put('/profile', withAuth, async (req, res) => {
   try {
-    res.render('profile');
+    console.log(req.body);
+    const userData = await User.update({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      email: req.body.email,
+      skill: req.body.dropdown
+    },
+      {
+        where: {
+          id: req.session.user_id,
+        }
+      });
+    console.log(userData);
+    res.status(200).json(userData);
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
+
+
+// router.get('/profile/:id', async (req, res) => {
+
+//   try {
+//     res.render('profile');
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 module.exports = router;

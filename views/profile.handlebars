@@ -1,6 +1,6 @@
  <body> 
     <h1>Please create a profile to continue</h1>
-   <form id="profile-form-first-name">
+   <form id="profile-form">
       <label for="first-name">First Name: </label>
       <input value = " {{firstName}}" name="first-name" id="first-name" aria-placeholder="First name">
       <br>
@@ -10,28 +10,28 @@
       <label for="email">Email:</label>
       <input value="{{email}}" name="email" id="email" aria-placeholder="input your valid email">
       <br> 
-
-       {{!-- <label for="skill">skill:</label>
-      <input value="{{skill}}" name="email" id="email" aria-placeholder="input your valid email">
-       <br> --}}
        <label for="dropdown">skill category:</label>
-      <select id="dropdown" name="dropdown">
-        <option value="option1"> Accounting</option>
-        <option value="option2">Administration</option>
-        <option value="option3">Construction</option>
-        <option value="option4">Engineeering</option>
-        <option value="option5">IT</option>
-        <option value="option6">Healthcare</option>
-        <option value="option7">Logistics</option>
+      <select id="dropdown" name="dropdown" value="{{skill}}">
+        <option value="" selected disabled>{{skill}}</option>
+        <option value="Accounting"> Accounting</option>
+        <option value="Administration">Administration</option>
+        <option value="Construction">Construction</option>
+        <option value="Engineeering">Engineeering</option>
+        <option value="IT">IT</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Logistics">Logistics</option>
       </select> 
       <br> 
-      <button type="submit">Save</button>
+      <button type="submit" id="saveBtn">Save</button>
     </form>
+
+    <div>
+       <a href="/api/jobs">View jobs!</a>
+    </div>
 
     <script id="profile-template" type="text/x-handlebars-template">
       <h2>{{firstName}} {{lastName}}</h2>
       <p>Email: {{email}}</p>
-      {{!-- <p>Selected Option: {{selectedOption}}</p> --}}
     </script>
     
     <script src="./js/profile.js"></script> 
