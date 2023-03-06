@@ -15,15 +15,18 @@ router.get('/', async (req, res) => {
 
 
         );
-
-        res.status(200).json(jobData);
-    } catch (err) {
+        const jobAds = jobData.map((job) => job.get({ plain: true }));
+        res.render('ads',{jobAds, logged_in: req.session.logged_in });
+        // res.status(200).json(jobData);
+    } 
+    catch (err) {
         res.status(500).json(err);
         console.log(err)
     }
 });
 
 // get one job
+
 router.get('/:id', async (req, res) => {
     // find a single job by its `id`
     // include its associated Category 
@@ -34,12 +37,51 @@ router.get('/:id', async (req, res) => {
             }
         );
 
-        res.status(200).json(jobData);
+        const jobAds = jobData.get({ plain: true });
+        res.render('job', {
+            ...jobAds,
+            logged_in: req.session.logged_in
+          });
+
+        // res.status(200).json(jobData);
     } catch (err) {
         res.status(500).json(err);
         console.log(err);
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// router.get('/:id', async (req, res) => {
+//     // find a single job by its `id`
+//     // include its associated Category 
+//     try {
+//         const jobData = await Jobs.findByPk(req.params.id,
+//             {
+//                 include: [{ model: Category }],
+//             }
+//         );
+
+//         res.status(200).json(jobData);
+//     } catch (err) {
+//         res.status(500).json(err);
+//         console.log(err);
+//     }
+// });
 
 // create new job
 router.post('/', async (req, res) => {
