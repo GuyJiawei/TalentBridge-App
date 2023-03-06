@@ -31,7 +31,7 @@ const userData = [
     password:`${bcrypt.hashSync('pass12345', 10)}`,      
     skill:''
   },
- 
+
 ];
 
 const seedUser = () => User.bulkCreate(userData);
