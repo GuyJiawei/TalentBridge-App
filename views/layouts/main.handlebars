@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width-device-width, initial=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
@@ -19,9 +20,9 @@
       <h4>"Building a path to your dream job...!"</h4>
     </div>
     <ul class="nav-links">
-      <li><a class="active" href="../index.html">Home</a></li>
-      <li><a href="about.html">Sign up</a></li>
-      <li><a href="services.html">Profile</a></li>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Sign up</a></li>
+      <li><a href="#">Profile</a></li>
     </ul>
   </nav>
 
@@ -45,16 +46,18 @@
       </p>
     </div>
   </footer>
-
+{{!-- by commenting out logout.js here the error not appearing any more --}}
   {{#if logged_in}}
-    <script src="/public/js/logout.js" ></script>
+    {{!-- <script src="./public/js/logout.js" ></script> --}}
   {{/if}} 
-
-  </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
+  </body>
+
+  
 
   </html>
 

@@ -141,3 +141,18 @@ router.post('/logout', (req, res) => {
 
 module.exports = router;
 
+// note in regards to unexpected token logout.js.  what would happen if we use this code instead of having 
+//the if statemeny {{#if loged in}} in main.hadlebars . the following code copied from mini project i notice the difference between the two
+
+
+// Logout
+// router.post('/logout', (req, res) => {
+//     // When the user logs out, destroy the session
+//     if (req.session.loggedIn) {
+//       req.session.destroy(() => {
+//         res.status(204).end();
+//       });
+//     } else {
+//       res.status(404).end();
+//     }
+//   });

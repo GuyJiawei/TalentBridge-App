@@ -12,12 +12,9 @@ router.get('/', async (req, res) => {
             {
                 include: [{ model: Category }],
             }
-
-
         );
-        const jobAds = jobData.map((job) => job.get({ plain: true }));
-        res.render('ads',{jobAds, logged_in: req.session.logged_in });
-        // res.status(200).json(jobData);
+      
+         res.status(200).json(jobData);
     } 
     catch (err) {
         res.status(500).json(err);
@@ -25,7 +22,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// get one job
+// get one job// check required by Maj
 
 router.get('/:id', async (req, res) => {
     // find a single job by its `id`
