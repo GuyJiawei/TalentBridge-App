@@ -1,27 +1,11 @@
-
-// function toggle_active(event){
-//     console.log(event);
-//     var elements= document.getElementsByTagName('a');
-//     for(var i=0; i<=elements.length; i++) {
-//         if (!(elements[i].getElementByClassName("active"))){
-//             elements[i].classList.remove("active");
-//         }
-//         else{
-//             elements[i].replaceClass(" ", "active");
-//         }
-//     }}
-
-
+const x = window.location.pathname.replace("/", "");
 const a = document.getElementsByTagName('a')
-a.addEventListener("click",color,false);
-
-function color(event){
 for (let i = 0; i < a.length; i++) {
     a[i].classList.remove(
         'active');
-    console.log(a[i].innerText);
-    if (a[i].innerText.trim() == 'Sign up')
+    if (x == "" && (a[i].innerText.trim().replace(/\s/g, "").toLowerCase() == 'home')) {
         a[i].classList.add('active')
-        event.preventDefault();
-}
-}
+    }
+    else if (a[i].innerText.trim().replace(/\s/g, "").toLowerCase() == x)
+        a[i].classList.add('active')
+};
