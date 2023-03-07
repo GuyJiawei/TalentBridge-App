@@ -22,5 +22,16 @@ const profileFormHandler = async (event) => {
   }
 }
 
+
+const searchEl = document.querySelector('#search-btn') 
+
+ function adsHandler(){
+     document.location.replace('/jobs'); 
+ }
+
+
+
+ searchEl.addEventListener('click', adsHandler);
 document.querySelector('#profile-form').addEventListener('submit', profileFormHandler);
+
 
