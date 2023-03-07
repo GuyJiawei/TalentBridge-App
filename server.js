@@ -44,3 +44,8 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
 });
+
+// Wildcard route to direct users to a 404 page
+app.get('*', (req, res) =>
+    res.sendFile(path.join(__dirname, 'public/pages/404.html'))
+);
