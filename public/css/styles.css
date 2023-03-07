@@ -1,8 +1,9 @@
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box; 
-    max-width: 100%
+    max-width: 100%;
     
 }
 
@@ -16,30 +17,49 @@ body {
     font-family: "Montserrat", sans-serif;
     align-items: right;
     justify-content: right;
-    margin-top: 250px;
+    /* margin-top: 250px; */
 }
 
-nav {
-    display: flex;
-    align-items: right;
-    min-height: 8vh;
+
+.navbar{
+    width: 100%;
+    display: inline-block;
+    padding: 0px;
     background-color: teal;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 30px;
+
 }
 
-.heading {
+.navbar-nav{
+color: white;
+    float:right;
+}
+
+.logo-img {
+    
+    margin-right: 20px;
+    float: left;
+    padding: 0px;
+}
+
+
+p{
+    display: inline;
+    margin-top: 20px;
     color: white;
     letter-spacing: 1.5px;
     font-size: 18px;
+    font-style: italic;
+  
+        justify-content: space-around;
+        width: 40%;
+        margin-left: 40px;
+        margin-top: 50px;
 }
 
-h4{
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-right: 95px;
-    font-style: italic;  
-}
+
+
 
 
 #nav-links {
@@ -50,9 +70,7 @@ h4{
     margin-top: 50px;
 }
 
-#nav-links li {
-    list-style: none;
-}
+
 
 #nav-links a {
     color: white;
@@ -68,16 +86,14 @@ h4{
 }
 
 /* #nav-links li */ 
-.active { 
+/* .active { 
     background-color: #389944;
     border-width: 3px;
     border-style: solid;
     border-color: lightseagreen;
-}
+} */
 
-.logo-img {
-    float: left;
-}
+
 
 main{
 
@@ -92,6 +108,7 @@ main{
     float:left;
 }
 #login{
+
 margin-top: 40px;
 margin-left: 45px;
 margin-bottom: 20px;
@@ -105,7 +122,6 @@ border-width: 3px;
 border-style: solid;
 border-color: lightseagreen;
 }
-
 
 
 
@@ -140,16 +156,20 @@ a{
 #footBackground{
     background-color: #89898b;
 }
+#register{
+    color:white;
+}
 
-
-.btn {
+.btn, #register{
     background-color: #389944;
     margin-left: 65px;
     border-width: 2px;
+    font-size:1vw;
     border-style: solid;
     border-color: teal;
+
 }
-.btn:hover{
+#register:hover, .btn:hover{
     border-width: 2px;
     border-color: teal;
     border-style: solid;
@@ -159,7 +179,8 @@ a{
 
 
 .form-control{
-    width:max-content;
+    font-size: 1vw;
+    width:40vw;
     margin-top: 20px;
     align-content: center;
 }
