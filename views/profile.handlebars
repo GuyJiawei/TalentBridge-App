@@ -21,6 +21,14 @@
         <option value="Healthcare">Healthcare</option>
         <option value="Logistics">Logistics</option>
       </select> 
+     <form action="/upload" method="POST" enctype="multipart/form-data">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="resume" name="resume">
+    <label class="custom-file-label" for="resume">Choose file</label>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Upload</button>
+</form>
+
       <br> 
       <button type="submit" id="saveBtn">Save</button>
     </form>
