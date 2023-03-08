@@ -20,6 +20,19 @@ body {
     /* margin-top: 250px; */
 }
 
+p {
+    display: inline;
+
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-style: italic;
+    justify-content: space-around;
+    width: 40%;
+   
+  
+}
+
 
 .navbar{
     width: 100%;
@@ -33,7 +46,40 @@ body {
 
 .navbar-nav{
 color: white;
-    float:right;
+float:right;
+margin-right:  50px; 
+} 
+
+.nav-link{
+    color: white;
+    float: right;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+
+}
+.nav-link a {
+    float: right;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 14px 16px;
+}
+
+.nav-link a:hover:not(.active) {
+    color: white !important;
+    background-color: #39aa49;
+}
+
+
+.active {
+    color: white !important;
+    background-color: #389944;
+    border-width: 3px;
+    border-style: solid;
+    border-color: lightseagreen;
 }
 
 .logo-img {
@@ -44,54 +90,14 @@ color: white;
 }
 
 
-p{
-    display: inline;
-    margin-top: 20px;
-    color: white;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    font-style: italic;
-  
-        justify-content: space-around;
-        width: 40%;
-        margin-left: 40px;
-        margin-top: 50px;
-}
 
 
 
 
 
-#nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    margin-left: 40px;
-    margin-top: 50px;
-}
 
 
 
-#nav-links a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 14px 16px;
-}
-
-#nav-links a:hover:not(.active) {
-    background-color:#39aa49;
-}
-
-/* #nav-links li */ 
-/* .active { 
-    background-color: #389944;
-    border-width: 3px;
-    border-style: solid;
-    border-color: lightseagreen;
-} */
 
 
 
@@ -161,6 +167,7 @@ a{
 }
 
 .btn, #register{
+    color:white;
     background-color: #389944;
     margin-left: 65px;
     border-width: 2px;
