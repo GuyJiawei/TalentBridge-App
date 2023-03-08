@@ -37,11 +37,41 @@ app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+app.post("/upload_files", multer({ dest: "uploads/" }).array("uploads[]", 12), function (req, res) {
+    console.log("files", req.files);
+    res.send(req.files);
+});
+
+
+
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, 'uploads')
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname)
+    }
+})
+
+const upload = multer({ storage: storage })
+
+app.post('/upload', upload.single('file'), (req, res) => {
+    console.log("file", req.file);
+    if(!file) {
+        const error = new Error('Please upload a file')
+        error.httpStatusCode = 400
+        return next(error)
+    }
+    res.send(req.file);
+
+});
 
 app.use(routes);
 

@@ -23,6 +23,7 @@ const profileFormHandler = async (event) => {
 }
 
 
+
 const searchEl = document.querySelector('#search-btn') 
 
  function adsHandler(){
@@ -31,7 +32,13 @@ const searchEl = document.querySelector('#search-btn')
 
 
 
- searchEl.addEventListener('click', adsHandler);
+
+
+
+
+searchEl.addEventListener('click', adsHandler);
 document.querySelector('#profile-form').addEventListener('submit', profileFormHandler);
+
+
 
 

@@ -21,26 +21,33 @@
         <option value="Healthcare">Healthcare</option>
         <option value="Logistics">Logistics</option>
       </select> 
-     <form action="/upload" method="POST" enctype="multipart/form-data">
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="resume" name="resume">
-    <label class="custom-file-label" for="resume">Choose file</label>
-  </div>
-  <button type="submit" class="btn btn-primary mt-3">Upload</button>
-</form>
-
       <br> 
+
+       <form id='upload-form'>
+            <div class="input-group">
+                <label for='files'>Upload your Resume</label>
+                <input value="{{upload your Resume}}" id='files' type="file" multiple>
+            </div>
+            <button class="submit-btn" type='submit-btn'>Upload</button>
+        </form>
+    </div>
+     
+
       <button type="submit" id="saveBtn">Save</button>
-    </form>
+      </form>
+
+
 
     <div>
-             <button id="search-btn" type="button" class="btn btn-primary btn-lg">View jobs</button>
+      <button id="search-btn" type="button" class="btn btn-primary btn-lg">View jobs</button>
 
     </div>
 
     <script id="profile-template" type="text/x-handlebars-template">
       <h2>{{firstName}} {{lastName}}</h2>
       <p>Email: {{email}}</p>
+      
+      
     </script>
     <script src="./js/profile.js"></script> 
   </body>
