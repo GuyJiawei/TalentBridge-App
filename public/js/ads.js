@@ -1,12 +1,5 @@
 // const formattedDate = moment(job.posted_date.format('YYYY-MM-DD HH:mm:ss'));
 
-const moment = require('moment');
-const Handlebars = require('handlebars');
-
-Handlebars.registerHelper('formatDate', function(date) {
-return moment(date).format('MMMM Do YYYY, h:mm:ss a');
-});
-
 $('.apply')
 .on('click', function(e){
   //document.querySelector('#myToast').toast("show");
