@@ -57,6 +57,7 @@ Here's what you can expect when you download TalentBridge:
 
 Contribution to this project will not be accepted, unfortunately. Thank you for your interest!
 
+
 ## Screenshots
 ### login page/Homepage
 ![Image 9-3-2023 at 5 53 pm](https://user-images.githubusercontent.com/117637113/223944702-9e66e8cb-23cc-4f62-a71d-f9a26bed4e80.jpg)
