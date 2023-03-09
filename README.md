@@ -19,6 +19,7 @@ Here's what you can expect when you download TalentBridge:
 
 * [Installation](#installation)
 * [Contributing](#contrubuting)
+* [Technologies](#technologies)
 * [License](#license)
 * [Questions](#questions)
 
@@ -38,6 +39,18 @@ Here's what you can expect when you download TalentBridge:
 - Enter `node seeds/index.js` to create the example data.
 - In the terminal enter `node server.js` and the application will run.
 
+
+# Technologies used in the project
+- To build this app, we had used Javascript primarily, we also had used node.js, MySQL, Bootstrap, Handlebars. Also various node packages have been used 
+  which are as follows-
+  
+  - Express: used as the application server.
+  - bcrypt : used for password encryption.
+  - mysql2 : used as database connection driver.
+  - dotenv : used for securing databse connection.
+  - sequelize : used for sql
+  - moment.js : used for time driven data
+
 ## Contributing
 
 Contribution to this project will not be accepted, unfortunately. Thank you for your interest!
@@ -49,16 +62,6 @@ Contribution to this project will not be accepted, unfortunately. Thank you for 
 - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 
-## Technologies used in the project
-- To build this app, we had used Javascript primarily, we also had used node.js, MySQL, Bootstrap, Handlebars. Also various node packages have been used 
-  which are as follows-
-  
-  - Express: used as the application server.
-  - bcrypt : used for password encryption.
-  - mysql2 : used as database connection driver.
-  - dotenv : used for securing databse connection.
-  - sequelize : used for sql
-  - moment.js : used for time driven data
 
 
 
