@@ -11,8 +11,8 @@ Here's what you can expect when you download TalentBridge:
 
 - Simple and intuitive interface: The app is easy to use and navigate, making it simple for you to search for job openings and apply for positions that match your skills and experience.
 
-## Elevator's Pitch (Presentation):
-  [I'm an inline-style link](https://docs.google.com/presentation/d/1bTsBigawyzlkwEE3H0gWnrjedALmKN2cS1n_vscp6YQ/edit#slide=id.g2162160f467_0_113 ) 
+## Elevator's Pitch:
+  [Presentation link](https://docs.google.com/presentation/d/1bTsBigawyzlkwEE3H0gWnrjedALmKN2cS1n_vscp6YQ/edit#slide=id.g2162160f467_0_113 ) 
  
  
 ## Future development
