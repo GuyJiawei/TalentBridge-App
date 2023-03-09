@@ -4,12 +4,55 @@ body {
     margin-right: 0px;
 }
 
-
+input{
+    border-radius: 5px;
+    margin: 5px;
+}
 
 a {
     color: azure;
 }
+.navbar-toggler span {
+    display: block;
+    background-color: #4f4f4f;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
 
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+}
 .navbar {
     background-color: teal;
     font-family: "Montserrat", sans-serif;
@@ -49,39 +92,38 @@ a {
 }
 
 .nav-link a:hover:not(.active) {
-    color: white !important;
+    color: white;
     background-color: #39aa49;
 }
 
 
 
 .active {
-    color: white !important;
+    color: white;
     background-color: #389944;
     border-width: 3px;
     border-style: solid;
     border-color: lightseagreen;
 }
-button,#sumitBtn,#saveBtn {
-    margin-left: 30px;
-}
+/* button,#sumitBtn,#saveBtn {
+    margin-left: 0px;
+} */
 
 .btn,#saveBtn,
-#register,#search-button ,#logout ,#profile{
+#register,#search-button{
     color: white;
     background-color: #389944;
-    border-width: 2px;
-    font-size: 1vw;
+    /* border-width: 2px;
+    font-size: 1vw; */
     border-style: solid;
     border-color: teal;
     margin-left: 30px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
-#profile{
-    
+#logout{
+    background-color: #212429;
+    border: none;
 }
-
-
 
 #search-button{
     padding: 5px;
@@ -99,7 +141,7 @@ button,#sumitBtn,#saveBtn {
     color: white;
 }
 .sign-up h2{
-    padding: 30px !important;
+    padding: 30px ;
     
 }
 
@@ -107,22 +149,25 @@ button,#sumitBtn,#saveBtn {
     margin-left: 20px;
 
 }
+#saveBtn{
+    padding: 8px 16px;
+    margin: 10px 0 0 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
 
 #password-signup,#sign-up-btn{
-    margin-left:-12px;
+    margin-left:12px;
 }
 .form-control{
-    
-    
     width:max-content;
     margin-bottom: 20px;
 }
 
-#profile-form,#first-name,#last-name,#email, #saveBtn,#dropdown{
-    margin: 10px;
-   
-    
+#logout.btn-no-style{
+    margin: 0 0 0 0;
 }
+
 #first-name,
 #last-name,
 #email{
@@ -140,4 +185,65 @@ footer {
 footer h2 {
     font-size: 15px;
 
+}
+
+@media only screen and (max-width: 950px) {
+    .form{
+        width: 100%;
+        height:100%;
+    }
+    .image{
+        width: 100%;
+        text-align: center;
+    }
+    #sign-up-btn{
+        margin: 0 30 0px 0;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    .navbar-toggler{
+       margin: 0;
+    }
+    #tag-line {
+        font-size: 15px;
+    }
+    #saveBtn {
+        font-size: 15px;
+        margin: 10px 0 0 0px;
+    }
+    #search-btn{
+        font-size: 15px;
+        margin: 0 0 0 0px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .body-text{
+        border: none;
+        width: 100%;
+    }
+    .form-control{
+        margin: 0 0 0 0;
+        padding: 5 0 0 0;
+    }
+    .form{
+        padding: 0 0 0 0;
+    }
+    #submitBtn {
+        margin: 0 0 0 0;
+        }
+    
+}
+@media only screen and (max-width: 541px) {
+    #tag-line {
+            display: none;
+        }
+}
+
+@media only screen and (max-width: 1000px){
+    .active {
+            color: white;
+            background-color: #212429;
+            border-color: #212429;
+        }
 }
