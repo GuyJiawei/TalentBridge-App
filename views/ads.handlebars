@@ -2,7 +2,7 @@
     {{#each jobAds as |e|}}
 
 <div class="card w-75 mb-3">
-  <div class="card-body">
+   <div class="card-body">
     <h5 class="card-title">{{e.job_name}}</h5>
     <div class="lh-1">
     <p > 
@@ -12,8 +12,11 @@
    
     </div>
     <p class="card-text">{{e.description}}</p>
-    <a data-jobsid="{{e.id}}" href="#" class="btn btn-primary apply">Apply</a>
-  </div>
+
+    <p> Posted on: {{ formatDate posted_date}}</p>
+
+        <button  class="btn btn-danger apply" data-jobsid="{{e.id}}" >Apply</button>
+   </div>
 </div>
 {{/each}}
 <script src="js/buttons.js"></script>

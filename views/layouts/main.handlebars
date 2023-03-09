@@ -1,7 +1,7 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width-device-width, initial=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial=1.0">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
@@ -9,6 +9,12 @@
     crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
+     <script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js" integrity="sha512-efUTj3HdSPwWJ9gjfGR71X9cvsrthIA78/Fvd/IN+fttQVy7XWkOAXb295j8B3cmm/kFKVxjiNYzKw9IQJHIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <title>TalentBridge: Jobs Finder</title>
   </head>
@@ -37,6 +43,20 @@
     <div class="col-sm-4  p-5">
         <div class="body-text p-2">{{{body}}}</div>  
     </div>
+    <ul class="nav-links">
+      <li><a class="active" href="../index.html">Home</a></li>
+      <li><a href="about.html">Sign up</a></li>
+      {{#if logged_in}}
+      <li><a href="/profile">Profile</a></li>
+      <li><button class="btn-no-style" id="logout">Logout</button></li>
+      {{/if}} 
+    </ul>
+  </nav>
+
+  <main>
+    <img id="mainImg" src="images/workforce1.jpg"   ALT="work interview">
+    <div id="login">
+      {{{body}}}
     </div>    
   </main>
   <footer>
@@ -55,15 +75,16 @@
   </footer>
 
   {{#if logged_in}}
-    <script src="/public/js/logout.js" ></script>
+    <script src="/js/logout.js"></script>
   {{/if}} 
-
-  </body>
   <script src="/js/buttons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 
+  </body>
+
+ 
   </html>
 
 

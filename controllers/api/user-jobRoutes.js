@@ -14,6 +14,19 @@ router.get('/', async (req, res) => {
     }
 });
 
-// post to user-job once a user applied  -- to be done
+// post to user-job once a user applied  
+
+
+router.post('/', async (req, res) => {
+    try {
+        const jobData = await UserJobs.create({
+            jobs_id: req.body.jobs_id,
+            user_id: req.session.user_id
+        });
+        res.status(200).json(jobData);
+    } catch (err) {
+        res.status(400).json(err);
+    }
+});
 
 module.exports = router;
