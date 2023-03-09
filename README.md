@@ -22,6 +22,7 @@ Here's what you can expect when you download TalentBridge:
 * [Installation](#installation)
 * [Contributing](#contrubuting)
 * [Technologies](#technologies)
+* [Screenshots](#screenshots)
 * [License](#license)
 * [Questions](#questions)
 
