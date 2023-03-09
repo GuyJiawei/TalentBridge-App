@@ -29,7 +29,10 @@
     <li class="nav-item p-4"> <a class="nav-link" href="./">Home</a></li>
     <li class="nav-item p-4"> <a class="nav-link" href="/signup" >Sign up</a></li>
     <li class="nav-item p-4"> <a class="nav-link" href="profile"> Profile</a></li>
-    
+    {{#if logged_in}}
+    <li class="nav-item p-4"><a href="/profile">Profile</a></li>
+    <li class="nav-item p-4"><button class="btn-no-style" id="logout">Logout</button></li>
+    {{/if}}     
   </ul>
 </div>
 </nav>
@@ -37,28 +40,13 @@
 
   <main class="container-fluid p-2">
     <div class="row">
-      <div class="col-sm-8 my-alert">
+      <div class="col-sm-8">
     <img id="mainImg" class="img-fluid" src="images/workforce1.jpg"   ALT="work interview">
     </div>
-    <div class="col-sm-4  p-5">
+    <div class="col-sm-4 p-5">
         <div class="body-text p-2">{{{body}}}</div>  
     </div>
-    <ul class="nav-links">
-      <li><a class="active" href="../index.html">Home</a></li>
-      <li><a href="about.html">Sign up</a></li>
-      {{#if logged_in}}
-      <li><a href="/profile">Profile</a></li>
-      <li><button class="btn-no-style" id="logout">Logout</button></li>
-      {{/if}} 
-    </ul>
   </nav>
-
-  <main>
-    <img id="mainImg" src="images/workforce1.jpg"   ALT="work interview">
-    <div id="login">
-      {{{body}}}
-    </div>    
-  </main>
   <footer>
     <div id="footBackground">
       <h2>TalentBridge built by:

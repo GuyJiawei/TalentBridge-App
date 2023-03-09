@@ -108,7 +108,7 @@ button,#sumitBtn,#saveBtn{
 .form-control{
     
     
-    width:350px;
+    width:max-content;
     margin-bottom: 20px;
 }
 
@@ -120,7 +120,7 @@ button,#sumitBtn,#saveBtn{
 #first-name,
 #last-name,
 #email{
-    width: 350px !important;
+    width:max-content !important;
 }
 footer {
     clear: both;
