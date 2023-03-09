@@ -55,6 +55,14 @@ Here's what you can expect when you download TalentBridge:
 
 Contribution to this project will not be accepted, unfortunately. Thank you for your interest!
 
+## Screenshots
+### login page/Homepage
+![Screenshot 2023-03-09 at 5 37 55 pm](https://user-images.githubusercontent.com/117637113/223941347-576ecf44-2696-4057-aae7-f50344c29807.jpg)
+
+### Signup page
+![Image 9-3-2023 at 5 45 pm](https://user-images.githubusercontent.com/117637113/223942427-1a60565c-e9ba-439e-8be9-efb39c5f8a16.jpg)
+
+### Profile 
 
 ## License
 - MIT
