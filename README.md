@@ -55,7 +55,7 @@ Contribution to this project will not be accepted, unfortunately. Thank you for 
   - mysql2 : used as database connection driver.
   - dotenv : used for securing databse connection.
   - sequelize : used for sql
-  _ moment.js : used for displaying the time on job postings
+  - moment.js : used for time driven data
 
 
 
