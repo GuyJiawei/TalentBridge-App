@@ -67,7 +67,7 @@ button,#sumitBtn,#saveBtn{
 }
 
 .btn,#saveBtn,
-#register,#adsJobs {
+#register,#search-button {
     color: white;
     background-color: #389944;
     border-width: 2px;
@@ -77,14 +77,14 @@ button,#sumitBtn,#saveBtn{
     margin-left: 30px;
     margin-right: 30px;
 }
-#adsJobs{
+#search-button{
     padding: 5px;
     margin: 20px;
     margin-bottom: 20px;
 }
 
 #saveBtn:hover,
-#register:hover,#adsJobs:hover,
+#register:hover,#search-button:hover,
 .btn:hover {
     border-width: 2px;
     border-color: teal;
