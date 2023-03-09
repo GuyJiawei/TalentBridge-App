@@ -57,12 +57,20 @@ Contribution to this project will not be accepted, unfortunately. Thank you for 
 
 ## Screenshots
 ### login page/Homepage
-![Screenshot 2023-03-09 at 5 37 55 pm](https://user-images.githubusercontent.com/117637113/223941347-576ecf44-2696-4057-aae7-f50344c29807.jpg)
+![Image 9-3-2023 at 5 53 pm](https://user-images.githubusercontent.com/117637113/223944702-9e66e8cb-23cc-4f62-a71d-f9a26bed4e80.jpg)
+
 
 ### Signup page
-![Image 9-3-2023 at 5 45 pm](https://user-images.githubusercontent.com/117637113/223942427-1a60565c-e9ba-439e-8be9-efb39c5f8a16.jpg)
+![Image 9-3-2023 at 5 54 pm](https://user-images.githubusercontent.com/117637113/223944766-500b3fb2-6d65-46aa-957d-758748c374f5.jpg)
+
 
 ### Profile 
+![Image 9-3-2023 at 5 55 pm 2](https://user-images.githubusercontent.com/117637113/223944829-9cb336f6-7590-412a-8e11-d39f2f57576f.jpg)
+
+
+
+### Jobs ads
+![Image 9-3-2023 at 5 55 pm](https://user-images.githubusercontent.com/117637113/223944878-5bcd0a7e-a8df-444f-ac64-e4549e384ac5.jpg)
 
 ## License
 - MIT
