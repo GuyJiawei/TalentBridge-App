@@ -14,7 +14,7 @@ Here's what you can expect when you download TalentBridge:
 ## Future development
 - Customised job search : TalentBridge allows you you customise your job search based on your location, industry, experience, level and other preferences.
 
--  Job recoomentation- based on your profile, TalentBridge will like to send you the job recommendations.
+-  Job recomendation- based on your profile, TalentBridge will like to send you the job recommendations.
 
 
 ## Table of Contents
