@@ -110,7 +110,7 @@ a {
 } */
 
 .btn,#saveBtn,
-#register,#search-button ,#logout{
+#register,#search-button{
     color: white;
     background-color: #389944;
     /* border-width: 2px;
@@ -120,7 +120,10 @@ a {
     margin-left: 30px;
     /* margin-right: 30px; */
 }
-
+#logout{
+    background-color: #212429;
+    border: none;
+}
 
 #search-button{
     padding: 5px;
@@ -157,8 +160,6 @@ a {
     margin-left:12px;
 }
 .form-control{
-    
-    
     width:max-content;
     margin-bottom: 20px;
 }
@@ -236,5 +237,13 @@ footer h2 {
 @media only screen and (max-width: 541px) {
     #tag-line {
             display: none;
+        }
+}
+
+@media only screen and (max-width: 1000px){
+    .active {
+            color: white;
+            background-color: #212429;
+            border-color: #212429;
         }
 }
