@@ -1,5 +1,5 @@
  <body> 
-    <h1>Please create a profile to continue</h1>
+    <h2>Please create a profile to continue</h1>
    <form id="profile-form">
       <label for="first-name">First Name: </label>
       <input value = " {{firstName}}" name="first-name" id="first-name" aria-placeholder="First name">
@@ -25,8 +25,8 @@
       <button type="submit" id="saveBtn">Save</button>
     </form>
 
-    <div>
-       <a href="/api/jobs">View jobs!</a>
+    <div >
+       <a id ="adsJobs" href="/api/jobs">View jobs!</a>
     </div>
 
     <script id="profile-template" type="text/x-handlebars-template">
