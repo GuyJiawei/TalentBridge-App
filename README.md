@@ -46,6 +46,19 @@ Contribution to this project will not be accepted, unfortunately. Thank you for 
 - A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
 
+## Technologies used in the project
+- To build this app, we had used Javascript primarily, we also had used node.js, MySQL, Bootstrap, Handlebars. Also various node packages have been used 
+  which are as follows-
+  
+  - Express: used as the application server.
+  - bcrypt : used for password encryption.
+  - mysql2 : used as database connection driver.
+  - dotenv : used for securing databse connection.
+  - sequelize : used for sql
+  _ moment.js : used for displaying the time on job postings
+
+
+
 ## Questions
 
 If you have any questions or require further information, please contact me at:
