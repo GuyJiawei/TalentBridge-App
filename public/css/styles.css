@@ -1,150 +1,137 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; 
-    max-width: 80%
-    max-content;
-}
-
 body {
     background-color: #c1c1c7;
+    max-width: 100%;
+    margin-right: 0px;
+}
+
+
+
+a {
+    color: azure;
+}
+
+.navbar {
+    background-color: teal;
+    font-family: "Montserrat", sans-serif;
 }
 
 .body-text {
     font-family: "Montserrat", sans-serif;
-    align-items: right;
-    justify-content: right;
-    margin-top: 250px;
-}
-
-nav {
-    display: flex;
-    align-items: right;
-    min-height: 8vh;
-    background-color: teal;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 30px;
-}
-
-.heading {
-    color: white;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-}
-
-h4{
-    margin-top: 50px;
-    margin-left: 40px;
-    margin-right: 200px;
-    font-style: italic;  
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    margin-left: 40px;
-    margin-top: 50px;
-}
-
-.nav-links li {
-    list-style: none;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 14px 16px;
-}
-
-.nav-links a:hover:not(.active) {
-    background-color:#39aa49;
-}
-
-.nav-links li a.active {
-    background-color: #389944;
     border-width: 3px;
     border-style: solid;
     border-color: lightseagreen;
 }
 
-.logo-img {
-    float: left;
+.separator {
+    flex-grow: 1;
 }
 
-main{
-
-    width: auto;
-    display:inline-block;
+#tag-line {
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    font-style: italic;
 }
 
-#mainImg{
-    width: 56.3%;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    float:left;
-}
-#login{
-margin-top: 110px;
-margin-left: 115px;
-margin-bottom: 125px;
-margin-right: 115px;
-border: 20px;
-
-display: inline-block;
-width: 19.5%;
-padding: 50px;
-border-width: 3px;
-border-style: solid;
-border-color: lightseagreen;
+.navbar-nav {
+    color: white;
 }
 
+.nav-link {
+    color: white;
+}
 
+.nav-link a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
 
-
-
-
-footer {
-
-  
-    /* padding: 30px; */
-  
-    
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    color: azure;
+.nav-link a:hover:not(.active) {
+    color: white !important;
+    background-color: #39aa49;
 }
 
 
 
-footer h2 {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 15px;
-}
-a{
-    color: azure;
-}
-#footBackground{
-    background-color: #89898b;
-}
-
-
-.btn {
+.active {
+    color: white !important;
     background-color: #389944;
-    margin-left: 65px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: lightseagreen;
+}
+button,#sumitBtn,#saveBtn{
+    margin-left: 30px;
+}
+
+.btn,#saveBtn,
+#register,#search-button {
+    color: white;
+    background-color: #389944;
     border-width: 2px;
+    font-size: 1vw;
     border-style: solid;
     border-color: teal;
+    margin-left: 30px;
+    margin-right: 30px;
 }
-.btn:hover{
+#search-button{
+    padding: 5px;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+#saveBtn:hover,
+#register:hover,#search-button:hover,
+.btn:hover {
     border-width: 2px;
     border-color: teal;
     border-style: solid;
     background-color: teal;
     color: white;
+}
+.sign-up h2{
+    padding: 30px !important;
+    
+}
+
+.form-group{
+    margin-left: 20px;
+
+}
+
+#password-signup,#sign-up-btn{
+    margin-left:-12px;
+}
+.form-control{
+    
+    
+    width:max-content;
+    margin-bottom: 20px;
+}
+
+#profile-form,#first-name,#last-name,#email, #saveBtn,#dropdown{
+    margin: 10px;
+   
+    
+}
+#first-name,
+#last-name,
+#email{
+    width:max-content !important;
+}
+footer {
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: azure;
+    background-color: #89898b;
+    padding-top: 20px;
+}
+
+footer h2 {
+    font-size: 15px;
+
 }
