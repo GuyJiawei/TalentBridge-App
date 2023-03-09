@@ -155,7 +155,9 @@ a {
     border-radius: 5px;
     font-size: 20px;
 }
-
+.form-group.row{
+    margin:0;
+}
 #password-signup,#sign-up-btn{
     margin-left:12px;
 }
