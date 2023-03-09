@@ -11,9 +11,11 @@ Here's what you can expect when you download TalentBridge:
 
 - Simple and intuitive interface: The app is easy to use and navigate, making it simple for you to search for job openings and apply for positions that match your skills and experience.
 
-- Customized job search: TalentBridge allows you to customize your job search based on your location, industry, experience level, and other preferences.
+## Future development
+- Customised job search : TalentBridge allows you you customise your job search based on your location, industry, experience, level and other preferences.
 
-- Job recommendations: Based on your profile and previous job searches, TalentBridge provides personalized job recommendations that fit your career goals.
+-  Job recoomentation- based on your profile, TalentBridge will like to send you the job recommendations.
+
 
 ## Table of Contents
 
@@ -31,7 +33,7 @@ Here's what you can expect when you download TalentBridge:
 - Clone the repository and run an integrated terminal.
 - Enter 'npm i' to download and install the required dependencies.
 - Create .env file and add: 
-- `DB_NAME='employees_db'`
+- `DB_NAME= Talent_db'`
 - `DB_PASSWORD='INSERT YOUR SQL PASSWORD'`
 - `DB_USER='root'`
 - Open an integrated terminal and enter `mysql -u root -p`, enter password to start MySQL.
