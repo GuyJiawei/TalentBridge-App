@@ -62,12 +62,12 @@ a {
     border-style: solid;
     border-color: lightseagreen;
 }
-button,#sumitBtn,#saveBtn{
+button,#sumitBtn,#saveBtn {
     margin-left: 30px;
 }
 
 .btn,#saveBtn,
-#register,#search-button {
+#register,#search-button ,#logout ,#profile{
     color: white;
     background-color: #389944;
     border-width: 2px;
@@ -77,6 +77,12 @@ button,#sumitBtn,#saveBtn{
     margin-left: 30px;
     margin-right: 30px;
 }
+#profile{
+    
+}
+
+
+
 #search-button{
     padding: 5px;
     margin: 20px;
