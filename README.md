@@ -24,6 +24,9 @@ Here's what you can expect when you download TalentBridge:
 
 ## Installation
 
+### Heroku- https://talent-bridge-app.herokuapp.com/
+
+### Local machine -
 - Clone the repository and run an integrated terminal.
 - Enter 'npm i' to download and install the required dependencies.
 - Create .env file and add: 
